@@ -3,15 +3,17 @@ import { BaseButton, BaseAlert, Field, Button, BaseHeroIcon, BaseMenuItem } from
 import { BrowserRouter as Router } from "react-router-dom";
 export default function NavBar() {
     return (
-        <div>
-            <BaseMenuItem to="/dashboard" icon="HomeIcon"  > Tableu de bord </BaseMenuItem>
-            <BaseMenuItem to="/consommateur" icon="HomeIcon" > Consommateur </BaseMenuItem>
-            <BaseMenuItem to="/services" icon="HomeIcon" > Services </BaseMenuItem>
-            <BaseMenuItem to="/facture" icon="HomeIcon" > Facture  </BaseMenuItem>
-            <BaseMenuItem to="/adhesion " icon="HomeIcon" > Adhesion </BaseMenuItem>
-            <BaseMenuItem to="/cotisation " icon="HomeIcon" > Cotisation </BaseMenuItem>
-            <BaseMenuItem to="/login " icon="HomeIcon" > Roles utilisateur </BaseMenuItem>
-            <BaseMenuItem to="/utilisateur " icon="HomeIcon" > Utilisateur </BaseMenuItem>
+        <div className="py-6">
+            <BaseMenuItem to="/dashboard" > Tableu de bord </BaseMenuItem>
+            <BaseMenuItem to="/consommateur" > Consommateur </BaseMenuItem>
+            <BaseMenuItem to="/services" > Services </BaseMenuItem>
+            <div className="py-6">
+                <BaseMenuItem to="/facture" > Facture  </BaseMenuItem>
+                <BaseMenuItem to="/adhesion " > Adhesion </BaseMenuItem>
+                <BaseMenuItem to="/cotisation " > Cotisation </BaseMenuItem>
+            </div>
+            <BaseMenuItem to="/login " > Roles utilisateur </BaseMenuItem>
+            <BaseMenuItem to="/utilisateur " > Utilisateur </BaseMenuItem>
         </div >
     );
 }
